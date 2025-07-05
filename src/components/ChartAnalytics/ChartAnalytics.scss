@@ -1,0 +1,36 @@
+@use '../../styles/variables';
+
+.chart-analytics{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 0.7em;
+    border-top: 2px solid variables.$Cream;
+    &__label{
+      margin-bottom: 8px;
+    }
+    &__value{
+      color: variables.$Dark-brown;
+      font-weight: 700;
+      font-size: 1.4em;
+    }
+    &__percentage{
+      color: variables.$Dark-brown;
+      font-weight: 700;
+      text-align: right;
+      margin-top: 18px;
+    }
+
+    @media (min-width: 600px){
+      padding-top: 32px;
+      font-size: 0.9em;
+      &__value{
+        font-size: 2.4em;
+      }
+      &__percentage{
+        margin-top: 30px;
+      }
+    }
+}
+  
+  

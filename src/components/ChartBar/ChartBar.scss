@@ -1,0 +1,54 @@
+@use '../../styles/variables';
+
+.chart__bar{
+  background-color: variables.$Soft-red;
+  width: 32px;
+  height: 200px;
+  border-radius: 4px;
+  position: relative;
+  &--max {
+    background-color: hsl(186, 34%, 60%);
+  }
+  &--label{
+    background-color: variables.$Dark-brown;
+    width: 38px;
+    font-size: 0.5em;
+    color: variables.$Very-pale-orange;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 400;
+    position: absolute;
+    top: -24px;
+    left: -4px;
+    display: none;
+  }
+  &--day{
+    position: absolute;
+    bottom: -16px;
+    font-size: 0.6em;
+    width: 32px;
+    text-align: center;
+  }
+  &:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+  &:hover &--label{
+    display: block;
+    
+  }
+  @media (min-width: 600px){
+    width: 50px;
+    &--label{
+      width: 54px;
+      font-size: 0.7em;
+      top: -32px;
+      left: 2px;
+    }
+    &--day{
+      width: 54px;
+      bottom: -24px;
+      font-size: 0.8em;
+    }
+  }
+}

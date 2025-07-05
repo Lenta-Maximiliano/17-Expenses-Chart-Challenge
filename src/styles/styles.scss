@@ -1,0 +1,10 @@
+@use './variables';
+@use './initial';
+
+.main-container{
+  width: 344px;
+  margin: 68px auto;
+  @media (min-width: 600px){
+    width: 540px;
+  }
+}
