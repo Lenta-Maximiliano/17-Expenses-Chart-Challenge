@@ -14,6 +14,7 @@ Esta es una solución para el desafío [Expenses chart component](https://www.fr
 ---
 
 ## Descripción General
+Proyecto desarrollado con React y Sass, siguiendo la metodología BEM y el enfoque Mobile First.
 
 ### Enlaces
 - **URL del Sitio en Vivo**: [Ver sitio aquí](https://17-expenses-chart-challenge.netlify.app/)
@@ -25,6 +26,8 @@ Esta es una solución para el desafío [Expenses chart component](https://www.fr
 - SCSS (modularizado con `@use`)
 - Modularización de componentes
 - Flujo de trabajo basado en **Mobile First**
+- Hooks de React: `useState` y `useEffect`
+- Datos cargados desde un archivo local `data.json`
 - Deploy con Netlify
 
 ---
@@ -33,16 +36,20 @@ Esta es una solución para el desafío [Expenses chart component](https://www.fr
 - Diseño completamente responsive para dispositivos móviles y escritorio.
 - Componentes React modulares (Balance, Chart, ChartAnalytics, ChartBar, Footer).
 - Estilos organizados con preprocesador **Sass/SCSS**, facilitando la reutilización y mantenimiento del código.
-- Mejores prácticas en diseño web responsive.
+- Visualización de datos dinámica obtenidos desde un `.json`.
+- Lógica de renderizado controlada por estado con `useState`.
 
 ---
 
 ## Aprendizajes
 En este proyecto, reforcé los siguientes conceptos:
 - **Componentización en React**: Dividir la interfaz en componentes pequeños y reutilizables.
+- **Uso del hook `useEffect`**: para cargar y procesar datos de un archivo JSON al iniciar el componente.
+- **Uso del hook `useState`**: para almacenar y actualizar dinámicamente el valor máximo entre los datos cargados.
+- **Carga de datos desde un archivo `.json`**: buena práctica para proyectos con datos simulados.
 - **Convención de Nombres BEM**: Mantener una estructura de clases clara y consistente.
 - **Flujo de trabajo con Git**: Gestionar ramas (por ejemplo, `dev` y `main`) y realizar commits estructurados.
-- **Uso de props para compartir datos entre componentes**:
+- **Uso de props**: pasar datos entre componentes de forma eficiente.
 
 ### Ejemplo de Código
 Aquí tienes un ejemplo de cómo modularicé un componente en React:
